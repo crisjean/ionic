@@ -1,39 +1,37 @@
-<ion-header [translucent]="true">
-    <ion-title>
-      RegistrAPP
-    </ion-title>
+<ion-header>
+  <ion-toolbar>
+    <ion-title class='tittle' ><img src='assets/img/tittle.png'></ion-title>
+  </ion-toolbar>
 </ion-header>
 
 
-<!-- INICIO -->
-
-
-
-<ion-content [fullscreen]="true">
-
-  <h1>Bienvenido al SitioWeb RegistrAPP</h1>
-  <br>
-
+<!-- INICIO CUERPO -->
+<ion-content>
 <!-- CONTENEDOR LOGIN -->
-  <div class='login'>
-
-        <img src="assets/img/1.png">
-
-    <br>
-
-    <h2>Iniciar Sesión</h2>
-    
-    <br>
-
-      <!-- INPUT USUARIO-->
-      <ion-input placeholder="USUARIO"></ion-input>
-      <!-- INPUT CONTRASEÑA-->
-      <ion-input placeholder="CONTRASEÑA" type="password"></ion-input>
-
-    <br>
-    <ion-button color="warning">Ingresar</ion-button>
+  <div class='contenedor'>
+      <br>
+      <img style='position:absolute; top:0; left:10%;' src='assets/img/img-login.jpg' width='40%' right='50%'>
+      <div class='login'>
+        <ion-card>
+          <h1><b>Iniciar Sesión</b></h1>
+          <!-- INPUT USUARIO-->
+          <ion-item>
+            <ion-label position="floating">Usuario</ion-label>
+            <ion-input maxlength='7' required ></ion-input>
+          </ion-item>
+          <!-- INPUT CONTRASEÑA-->
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input maxlength='7' type='password' required></ion-input>
+          </ion-item>
+          <a class='ol-pass' href='http://localhost:8100/pagina2'>¿Olvidaste tu contraseña?</a>
+          <br>
+          <ion-button color='warning'>
+            <p class='boton'><b>INGRESAR</b></p>
+          </ion-button>
+        </ion-card>
+      </div>
+    <!-- CIERRE CONTENEDOR -->
   </div>
-
-<!-- CIERRE -->
+<!-- CIERRE CUERPO -->
 </ion-content>
-
