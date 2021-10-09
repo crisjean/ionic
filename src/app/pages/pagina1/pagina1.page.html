@@ -7,27 +7,22 @@
 
 <!-- INICIO CUERPO -->
 <ion-content>
-<!-- CONTENEDOR LOGIN -->
+<!-- CONTENEDOR RECUPERAR -->
   <div class='contenedor'>
       <br>
-      <img style='position:absolute; top:0; left:10%;' src='assets/img/img-login.jpg' width='40%' right='50%'>
-      <div class='login'>
+      <div class='recuperar'>
         <ion-card>
-          <h1><b>Iniciar Sesión</b></h1>
+          <img src='assets/img/pass.png' width='500px'>
           <!-- INPUT USUARIO-->
           <ion-item>
-            <ion-label position="floating">Usuario</ion-label>
-            <ion-input maxlength='7' required ></ion-input>
+            <ion-input placeholder='INGRESE SU USUARIO'maxlength='7' required ></ion-input>
           </ion-item>
-          <!-- INPUT CONTRASEÑA-->
-          <ion-item>
-            <ion-label position="floating">Contraseña</ion-label>
-            <ion-input maxlength='7' type='password' required></ion-input>
-          </ion-item>
-          <a class='ol-pass' href='http://localhost:8100/pagina2'>¿Olvidaste tu contraseña?</a>
           <br>
+          <ion-button color='medium'>
+            <a href='http://localhost:8100/pagina1'><p class='boton'><b>CANCELAR</b></p></a>
+          </ion-button>
           <ion-button color='warning'>
-            <p class='boton'><b>INGRESAR</b></p>
+            <a href='http://localhost:8100/pagina1'><p class='boton'><b>RESTABLECER</b></p></a>
           </ion-button>
         </ion-card>
       </div>
